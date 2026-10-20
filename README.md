@@ -47,23 +47,16 @@ Download the prepared evaluation data from [SARE-DB/SARE-evaluation on Hugging F
 
 **The data release is being uploaded progressively.** Before downloading a dataset, check that its name appears in `completed_datasets` in the repository's `manifest.json`. A partially uploaded dataset is not ready for evaluation. The manifest and `SHA256SUMS` are updated after each dataset is fully uploaded and verified.
 
-Run the following commands in the `SARE/` directory containing `README.md` and `requirements.txt` (not inside `scripts/` or `dataset/`). This example downloads Chameleon:
+Run the download script with a dataset name:
 
 ```bash
-hf download SARE-DB/SARE-evaluation --repo-type dataset \
-  --include "archives/Chameleon/*" --include "manifest.json" \
-  --include "SHA256SUMS" --local-dir downloads/SARE-evaluation
-
-# Verify the downloaded archive files.
-(cd downloads/SARE-evaluation && sha256sum --ignore-missing -c SHA256SUMS)
-
-# Run only after checksum verification succeeds.
-for archive in downloads/SARE-evaluation/archives/Chameleon/*.tar; do
-  tar -xf "$archive"
-done
+bash scripts/download_dataset.sh Chameleon
+bash scripts/download_dataset.sh Genimage
+bash scripts/download_dataset.sh CommunityForensics
+bash scripts/download_dataset.sh Forensynths
 ```
 
-Replace `Chameleon` in both commands with `Genimage`, `CommunityForensics`, or `Forensynths` to download another completed dataset. Download **all** archive parts for that dataset.
+The script automatically uses the SARE directory containing the script, downloads and verifies all required archive parts, and extracts the data into `dataset/`. To run it from another directory, provide the path to the script, for example `bash /path/to/SARE/scripts/download_dataset.sh Chameleon`.
 
 ```text
 dataset/
