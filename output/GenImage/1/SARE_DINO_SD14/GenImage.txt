@@ -1,0 +1,16 @@
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:stable_diffusion_v_1_4/imagenet_ai_0419_sdv4
+acc:0.9698, auc:0.9999, recall:1.0000, precision:0.9431, f1:0.9707, fnr: 0.0000, eer: 0.0047
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:stable_diffusion_v_1_5/imagenet_ai_0424_sdv5
+acc:0.9676, auc:0.9996, recall:0.9982, precision:0.9406, f1:0.9686, fnr: 0.0018, eer: 0.0061
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Midjourney/imagenet_midjourney
+acc:0.9393, auc:0.9846, recall:0.9483, precision:0.9316, f1:0.9399, fnr: 0.0517, eer: 0.0592
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:ADM/imagenet_ai_0508_adm
+acc:0.9134, auc:0.9738, recall:0.8955, precision:0.9288, f1:0.9118, fnr: 0.1045, eer: 0.0877
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:wukong/imagenet_ai_0424_wukong
+acc:0.9667, auc:0.9997, recall:0.9997, precision:0.9379, f1:0.9678, fnr: 0.0003, eer: 0.0062
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:glide/imagenet_glide
+acc:0.9617, auc:0.9960, recall:0.9890, precision:0.9377, f1:0.9627, fnr: 0.0110, eer: 0.0301
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:VQDM/imagenet_ai_0419_vqdm
+acc:0.9614, auc:0.9986, recall:0.9952, precision:0.9322, f1:0.9627, fnr: 0.0048, eer: 0.0171
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:BigGAN/imagenet_ai_0419_biggan
+acc:0.9648, auc:0.9970, recall:0.9915, precision:0.9413, f1:0.9657, fnr: 0.0085, eer: 0.0262

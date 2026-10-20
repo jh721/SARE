@@ -1,0 +1,2 @@
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:stable_diffusion_v_1_4/imagenet_ai_0419_sdv4
+acc:0.6620, auc:0.7222, recall:0.6858, precision:0.5916, f1:0.6352, fnr: 0.3142, eer: 0.3325

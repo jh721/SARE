@@ -1,0 +1,24 @@
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:biggan
+acc:0.8315, auc:0.9211, recall:0.9405, precision:0.7722, f1:0.8481, fnr: 0.0595
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:crn
+acc:0.4665, auc:0.4771, recall:0.6479, precision:0.4755, f1:0.5484, fnr: 0.35208398621121906
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:cyclegan
+acc:0.9095, auc:0.9609, recall:0.9410, precision:0.8853, f1:0.9123, fnr: 0.059046177138531414
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:deepfake
+acc:0.5156, auc:0.7772, recall:0.9933, precision:0.5076, f1:0.6718, fnr: 0.006671608598962194
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:gaugan
+acc:0.8128, auc:0.9045, recall:0.7510, precision:0.8569, f1:0.8005, fnr: 0.249
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:imle
+acc:0.6098, auc:0.7908, recall:0.9345, precision:0.5666, f1:0.7055, fnr: 0.06549670949545597
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:progan
+acc:0.8451, auc:0.9312, recall:0.9423, precision:0.7890, f1:0.8588, fnr: 0.05775
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:san
+acc:0.8470, auc:0.9255, recall:0.8174, precision:0.8689, f1:0.8424, fnr: 0.182648401826484
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:seeingdark
+acc:0.6139, auc:0.7764, recall:0.9833, precision:0.5655, f1:0.7181, fnr: 0.016666666666666666
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:stargan
+acc:0.5965, auc:0.9484, recall:0.9995, precision:0.5535, f1:0.7124, fnr: 0.0005002501250625312
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:stylegan
+acc:0.7674, auc:0.8597, recall:0.8431, precision:0.7322, f1:0.7838, fnr: 0.15690201969621098
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/15_acc0.9712.pth, post_aug_mode:None, class_name:stylegan2
+acc:0.7604, auc:0.8360, recall:0.8676, precision:0.7144, f1:0.7836, fnr: 0.13244867300951427

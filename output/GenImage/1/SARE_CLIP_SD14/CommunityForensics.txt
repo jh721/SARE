@@ -1,0 +1,43 @@
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Dalle2
+acc:0.9395, auc:0.9843, recall:0.9250, precision:0.9526, f1:0.9386, fnr: 0.075
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Dalle3
+acc:0.9560, auc:0.9912, recall:0.9650, precision:0.9479, f1:0.9564, fnr: 0.035
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:DeciDiffusionV2
+acc:0.9595, auc:0.9915, recall:0.9610, precision:0.9581, f1:0.9596, fnr: 0.039
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:DFGAN
+acc:0.9725, auc:0.9972, recall:0.9870, precision:0.9592, f1:0.9729, fnr: 0.013
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Firefly_Image2
+acc:0.8308, auc:0.9256, recall:0.7054, precision:0.9416, f1:0.8065, fnr: 0.2946382092660073
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Firefly_Image3
+acc:0.8170, auc:0.9103, recall:0.6817, precision:0.9346, f1:0.7884, fnr: 0.3182751540041068
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:FLUX-dev
+acc:0.8200, auc:0.9224, recall:0.6930, precision:0.9290, f1:0.7938, fnr: 0.307
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:FLUX-schnell
+acc:0.7545, auc:0.8802, recall:0.5600, precision:0.9165, f1:0.6952, fnr: 0.44
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:GALIP
+acc:0.9455, auc:0.9805, recall:0.9410, precision:0.9495, f1:0.9453, fnr: 0.059
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Hourglass
+acc:0.6993, auc:0.8566, recall:0.9680, precision:0.5267, f1:0.6822, fnr: 0.032
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:IdeogramV1
+acc:0.8059, auc:0.9233, recall:0.6657, precision:0.9249, f1:0.7742, fnr: 0.33433433433433435
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:IdeogramV2
+acc:0.7460, auc:0.8970, recall:0.5350, precision:0.9256, f1:0.6781, fnr: 0.465
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:Imagen3
+acc:0.9023, auc:0.9718, recall:0.8480, precision:0.9474, f1:0.8950, fnr: 0.15196078431372548
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:kandinsky_2_2
+acc:0.9680, auc:0.9977, recall:0.9950, precision:0.9440, f1:0.9688, fnr: 0.005
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:kvikontent_midjourney_v6
+acc:0.9690, auc:0.9990, recall:0.9920, precision:0.9484, f1:0.9697, fnr: 0.008
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:LCM_lora_sdv15
+acc:0.9175, auc:0.9775, recall:0.8960, precision:0.9363, f1:0.9157, fnr: 0.104
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:LCM_lora_sdxl
+acc:0.9575, auc:0.9934, recall:0.9640, precision:0.9516, f1:0.9578, fnr: 0.036
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:LCM_lora_ssd1b
+acc:0.9510, auc:0.9879, recall:0.9470, precision:0.9546, f1:0.9508, fnr: 0.053
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:MidjourneyV5_2
+acc:0.7376, auc:0.8832, recall:0.5178, precision:0.9239, f1:0.6637, fnr: 0.48218765679879577
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:MidjourneyV6_1
+acc:0.8867, auc:0.9616, recall:0.8259, precision:0.9402, f1:0.8794, fnr: 0.17408704352176088
+model_path:../output/GenImage/1/drct_dire_cond_final_BLIP_75_5_50/weights/15_acc0.9712.pth, post_aug_mode:None, class_name:stable_cascade
+acc:0.9680, auc:0.9951, recall:0.9760, precision:0.9606, f1:0.9683, fnr: 0.024
+

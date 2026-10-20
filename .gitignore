@@ -218,3 +218,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local datasets and inference outputs
+/dataset/
+/output/
+
+# Model weights (including pretrained backbones)
+*.pth
+*.pt
+*.ckpt
+
+# Python and IDE files
+__pycache__/
+/.idea/

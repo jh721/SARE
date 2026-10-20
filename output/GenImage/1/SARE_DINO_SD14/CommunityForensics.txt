@@ -1,0 +1,42 @@
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Dalle2
+acc:0.9350, auc:0.9910, recall:0.9770, precision:0.9013, f1:0.9376, fnr: 0.0230, eer: 0.0425
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Dalle3
+acc:0.9480, auc:0.9972, recall:0.9950, precision:0.9095, f1:0.9503, fnr: 0.0050, eer: 0.0230
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:DeciDiffusionV2
+acc:0.9295, auc:0.9992, recall:0.9980, precision:0.8777, f1:0.9340, fnr: 0.0020, eer: 0.0110
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:DFGAN
+acc:0.9510, auc:1.0000, recall:1.0000, precision:0.9107, f1:0.9533, fnr: 0.0000, eer: 0.0015
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Firefly_Image2
+acc:0.9334, auc:0.9963, recall:0.9906, precision:0.8888, f1:0.9370, fnr: 0.0094, eer: 0.0255
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Firefly_Image3
+acc:0.9207, auc:0.9772, recall:0.9507, precision:0.8969, f1:0.9230, fnr: 0.0493, eer: 0.0693
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:FLUX-dev
+acc:0.8840, auc:0.9577, recall:0.8960, precision:0.8750, f1:0.8854, fnr: 0.1040, eer: 0.1080
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:FLUX-schnell
+acc:0.8895, auc:0.9594, recall:0.8900, precision:0.8891, f1:0.8896, fnr: 0.1100, eer: 0.1110
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:GALIP
+acc:0.9440, auc:0.9995, recall:0.9990, precision:0.9000, f1:0.9469, fnr: 0.0010, eer: 0.0090
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Hourglass
+acc:0.6520, auc:0.7943, recall:0.9240, precision:0.4884, f1:0.6390, fnr: 0.0760, eer: 0.2833
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:IdeogramV1
+acc:0.9175, auc:0.9809, recall:0.9560, precision:0.8875, f1:0.9205, fnr: 0.0440, eer: 0.0710
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:IdeogramV2
+acc:0.8675, auc:0.9490, recall:0.8670, precision:0.8679, f1:0.8674, fnr: 0.1330, eer: 0.1320
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Imagen3
+acc:0.8801, auc:0.9515, recall:0.8784, precision:0.8776, f1:0.8780, fnr: 0.1216, eer: 0.1199
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:kandinsky_2_2
+acc:0.9435, auc:0.9996, recall:0.9990, precision:0.8992, f1:0.9465, fnr: 0.0010, eer: 0.0050
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:kvikontent_midjourney_v6
+acc:0.9415, auc:0.9982, recall:0.9940, precision:0.8995, f1:0.9444, fnr: 0.0060, eer: 0.0090
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:LCM_lora_sdv15
+acc:0.9275, auc:0.9976, recall:0.9920, precision:0.8787, f1:0.9319, fnr: 0.0080, eer: 0.0060
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:LCM_lora_sdxl
+acc:0.9360, auc:0.9991, recall:0.9990, precision:0.8872, f1:0.9398, fnr: 0.0010, eer: 0.0130
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:LCM_lora_ssd1b
+acc:0.9425, auc:0.9995, recall:0.9990, precision:0.8976, f1:0.9456, fnr: 0.0010, eer: 0.0075
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:MidjourneyV5_2
+acc:0.9290, auc:0.9874, recall:0.9679, precision:0.8980, f1:0.9317, fnr: 0.0321, eer: 0.0549
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:MidjourneyV6_1
+acc:0.9242, auc:0.9857, recall:0.9625, precision:0.8941, f1:0.9270, fnr: 0.0375, eer: 0.0608
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:stable_cascade
+acc:0.9435, auc:0.9993, recall:0.9990, precision:0.8992, f1:0.9465, fnr: 0.0010, eer: 0.0035

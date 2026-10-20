@@ -1,0 +1,2 @@
+model_path:../output/GenImage/1/drct_dire_cond_concat_75_5_50_dino_gloo/weights/7_acc0.9658.pth, post_aug_mode:None, class_name:Chameleon
+acc:0.7936, auc:0.9038, recall:0.8674, precision:0.7135, f1:0.7829, fnr: 0.1326, eer: 0.1719
