@@ -45,7 +45,7 @@ bash scripts/download_checkpoints.sh
 
 ### 2. Download and place the evaluation data
 
-Download the prepared evaluation data from [SARE-DB/SARE-evaluation on Hugging Face](https://huggingface.co/datasets/SARE-DB/SARE-evaluation). You only need the datasets you intend to evaluate.
+Download the prepared evaluation data from [SARE-DB/SARE-evaluation on Hugging Face](https://huggingface.co/datasets/SARE-DB/SARE-evaluation).
 
 **The data release is being uploaded progressively.** Before downloading a dataset, check that its name appears in `completed_datasets` in the repository's `manifest.json`. A partially uploaded dataset is not ready for evaluation. The manifest and `SHA256SUMS` are updated after each dataset is fully uploaded and verified.
 
@@ -67,9 +67,7 @@ done
 
 Replace `Chameleon` in both commands with `Genimage`, `CommunityForensics`, or `Forensynths` to download another completed dataset. Download **all** archive parts for that dataset. Each `.tar` is an independent archive; extract every part separately, without concatenating them.
 
-Every archive already contains paths beginning with `dataset/`. **Extract from the repository root, not from inside `dataset/`.** Extraction creates the exact layout below, ready for `scripts/test.sh`: no renaming, moving folders, or creating symbolic links is required. The archives contain actual image and reconstruction files. Keep the existing `test.sh` dataset paths.
-
-Use a fresh local checkout or empty destination for extraction. On the original server, the existing `dataset/` entries are symlinks; those already provide the data, so do not extract the release over them.
+Extract all archives from the **SARE repository root**. They already contain the `dataset/` paths below, so no folder renaming, moving, or symbolic links are needed.
 
 ```text
 dataset/
@@ -91,44 +89,7 @@ dataset/
         └── w_prompt_blip/
 ```
 
-Keep the capitalization exactly as shown: the dataset directory is `Genimage`, while the command-line dataset name and checkpoint directory use `GenImage`. Avoid introducing an extra directory level when extracting archives.
-
-SARE uses both an image input and a reconstruction-error input. For each evaluated sample, the loader needs all three files:
-
-1. The image under `wo_prompt/.../crop/...`.
-2. Its corresponding image under `w_prompt_blip/.../crop/...`.
-3. Its corresponding reconstruction under `w_prompt_blip/.../inpainting/...`.
-
-Raw benchmark images alone are insufficient. This inference workflow uses precomputed reconstructions and does not generate them automatically. The existing data layout may also contain `wo_prompt/.../inpainting/...`; the commands below do not read that branch.
-
-For example, Chameleon must contain:
-
-```text
-dataset/Chameleon/Chameleon_recon/
-├── wo_prompt/
-│   └── crop/test/
-│       ├── 0_real/<image files>
-│       └── 1_fake/<image files>
-└── w_prompt_blip/
-    ├── crop/test/
-    │   ├── 0_real/<matching image files>
-    │   └── 1_fake/<matching image files>
-    └── inpainting/test/
-        ├── 0_real/<matching reconstruction files>
-        └── 1_fake/<matching reconstruction files>
-```
-
-The other datasets follow these paths beneath **each** of `wo_prompt/` and `w_prompt_blip/`:
-
-| Dataset | Image path beneath the branch | Real / fake folders |
-| --- | --- | --- |
-| GenImage | `<generator>/<subset>/crop/val/<class>/` | `nature` / `ai` |
-| CommunityForensics | `<generator>/crop/test/<class>/` | `nature` / `ai` |
-| Forensynths | `<generator>/crop/<class>/` | `0_real` / `1_fake` |
-| Forensynths: cyclegan, progan, stylegan, stylegan2 | `<generator>/<subcategory>/crop/<class>/` | `0_real` / `1_fake` |
-| Chameleon | `crop/test/<class>/` | `0_real` / `1_fake` |
-
-Under `w_prompt_blip/`, place matching reconstructions at the same relative path with `crop/` replaced by `inpainting/`. Preserve sample basenames. For CommunityForensics, Forensynths, and Chameleon, the loader maps `.jpg` image names to `.png` in `w_prompt_blip/`; GenImage preserves the filename. The generator/subset names and their ordering are defined in `GenImage_LIST`, `CommunityForensics_LIST`, and `Forensynths_LIST` in `data/dataset.py`.
+The prepared data includes images in `wo_prompt/.../crop/` and matching image–reconstruction pairs in `w_prompt_blip/.../{crop,inpainting}/`. Keep the extracted structure unchanged; the data is ready for `scripts/test.sh`.
 
 ### 3. Run inference
 
