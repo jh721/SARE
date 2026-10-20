@@ -11,7 +11,7 @@ python -m pip install torch==2.5.1 torchvision==0.20.1 --index-url https://downl
 python -m pip install -r requirements.txt
 ```
 
-For SARE-DINO, once the checkpoint release is published, the download script in Inference will also provide the DINOv3 ViT-H+/16 pretrained weights. Alternatively, obtain them from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3), following its access and license requirements. Place the file at:
+For SARE-DINO, download the DINOv3 ViT-H+/16 pretrained weights from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3) and place the file at:
 
 ```text
 dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a5.pth
