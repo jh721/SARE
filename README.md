@@ -122,3 +122,7 @@ FAKE_INDEXES=(1)
 cd scripts
 bash test.sh
 ```
+
+## Acknowledgments
+
+Our code is developed based on [DRCT](https://github.com/beibuwandeluori/DRCT), [CLIP](https://github.com/openai/CLIP), and [DINOv3](https://github.com/facebookresearch/dinov3). We thank the authors for sharing their code and models.
