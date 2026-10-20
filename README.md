@@ -2,8 +2,6 @@
 
 ## Installation
 
-Use Linux, an NVIDIA GPU with a CUDA-compatible driver, and Python 3.10. The inference code requires CUDA. The dependency versions in `requirements.txt` were exported from a Python 3.10.20 environment with PyTorch 2.5.1 and CUDA 12.1 wheels.
-
 Download or clone this repository, then run the following commands from its root directory:
 
 ```bash
@@ -49,7 +47,7 @@ Download the prepared evaluation data from [SARE-DB/SARE-evaluation on Hugging F
 
 **The data release is being uploaded progressively.** Before downloading a dataset, check that its name appears in `completed_datasets` in the repository's `manifest.json`. A partially uploaded dataset is not ready for evaluation. The manifest and `SHA256SUMS` are updated after each dataset is fully uploaded and verified.
 
-Run the following commands from the **SARE repository root**, with the environment from Installation activated. This example downloads Chameleon:
+Run the following commands in the `SARE/` directory containing `README.md` and `requirements.txt` (not inside `scripts/` or `dataset/`). This example downloads Chameleon:
 
 ```bash
 hf download SARE-DB/SARE-evaluation --repo-type dataset \
@@ -65,9 +63,7 @@ for archive in downloads/SARE-evaluation/archives/Chameleon/*.tar; do
 done
 ```
 
-Replace `Chameleon` in both commands with `Genimage`, `CommunityForensics`, or `Forensynths` to download another completed dataset. Download **all** archive parts for that dataset. Each `.tar` is an independent archive; extract every part separately, without concatenating them.
-
-Extract all archives from the **SARE repository root**. They already contain the `dataset/` paths below, so no folder renaming, moving, or symbolic links are needed.
+Replace `Chameleon` in both commands with `Genimage`, `CommunityForensics`, or `Forensynths` to download another completed dataset. Download **all** archive parts for that dataset.
 
 ```text
 dataset/
@@ -88,8 +84,6 @@ dataset/
         ├── wo_prompt/
         └── w_prompt_blip/
 ```
-
-The prepared data includes images in `wo_prompt/.../crop/` and matching image–reconstruction pairs in `w_prompt_blip/.../{crop,inpainting}/`. Keep the extracted structure unchanged; the data is ready for `scripts/test.sh`.
 
 ### 3. Run inference
 
