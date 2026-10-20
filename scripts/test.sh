@@ -3,12 +3,12 @@
 ### SARE_CLIP ###
 MODEL_NAME=clip-ViT-L-14
 MODEL_SUBPATH=SARE_CLIP_SD14
-MODEL_PATH=../output/GenImage/1/${MODEL_SUBPATH}/weights/sare_clip_sd14.pth
+MODEL_PATH=../output/Genimage/1/${MODEL_SUBPATH}/weights/sare_clip_sd14.pth
 
 # ### SARE_DINO ###
 # MODEL_NAME=dinov3-vith16plus
 # MODEL_SUBPATH=SARE_DINO_SD14
-# MODEL_PATH=../output/GenImage/1/${MODEL_SUBPATH}/weights/sare_dino_sd14.pth
+# MODEL_PATH=../output/Genimage/1/${MODEL_SUBPATH}/weights/sare_dino_sd14.pth
 
 
 ### SETTINGS ###
@@ -23,7 +23,7 @@ EMBEDDING_SIZE=${4:-$EMBEDDING_SIZE}
 ### TEST_DATASET ###
 
 # ROOT_PATH=../dataset/Genimage/Genimage_recon/wo_prompt
-# DATASET_NAME=GenImage
+# DATASET_NAME=Genimage
 # FAKE_INDEXES=(1 2 3 4 5 6 7 8)
 
 # ROOT_PATH=../dataset/CommunityForensics/CommunityForensics_recon/wo_prompt
@@ -41,7 +41,7 @@ FAKE_INDEXES=(1)
 
 ####################
 FAKE_ROOT_PATH=""
-SAVE_TXT=../output/GenImage/1/${MODEL_SUBPATH}/${DATASET_NAME}.txt
+SAVE_TXT=../output/Genimage/1/${MODEL_SUBPATH}/${DATASET_NAME}.txt
 INPUT_SIZE=224
 BATCH_SIZE=24
 ####################

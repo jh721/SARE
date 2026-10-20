@@ -272,7 +272,7 @@ def load_Forensynths(root_path='', phase='train', seed=2023,
     return image_paths_drct, image_paths_dire, labels
 
 
-def load_Chameleon(root_path='/disk1/chenby/dataset/AIGC_data/GenImage', phase='train', seed=2023,
+def load_Chameleon(root_path='/disk1/chenby/dataset/AIGC_data/Genimage', phase='train', seed=2023,
                   indexes='1,2,3,4,5,6,7,8', val_split=0.1):
     indexes = [int(i) - 1 for i in indexes.split(',')]
     real_images, real_labels, fake_images, fake_labels = [], [], [], []
@@ -324,7 +324,7 @@ def load_normal_data(root_path, val_split, seed, phase='train', regex='*.*', tes
     return images_t, captions_t
 
 
-def load_GenImage(root_path='/disk1/chenby/dataset/AIGC_data/GenImage', phase='train', seed=2023,
+def load_GenImage(root_path='/disk1/chenby/dataset/AIGC_data/Genimage', phase='train', seed=2023,
                   indexes='1,2,3,4,5,6,7,8', val_split=0.1):
 
     indexes = [int(i) - 1 for i in indexes.split(',')]
@@ -416,7 +416,7 @@ def load_pair_data(root_path, fake_root_path=None, phase='train', seed=2023, fak
         print(f'Pair data-{phase}:{len(total_paths)}.')
         return total_paths
     assert (len(root_path.split(',')) == 2 and len(fake_root_path.split(',')) == 2) or \
-           (root_path == fake_root_path and 'GenImage' in root_path)
+           (root_path == fake_root_path and 'Genimage' in root_path)
     real_root, real_rec_root = root_path.split(',')[:2]
     fake_root, fake_rec_root = fake_root_path.split(',')[:2]
 

@@ -33,8 +33,8 @@ Download the checkpoint for the model you want to evaluate and place it at the e
 
 | Model | `--model_name` | Checkpoint path relative to the repository root |
 | --- | --- | --- |
-| SARE-CLIP | `clip-ViT-L-14` | `output/GenImage/1/SARE_CLIP_SD14/weights/sare_clip_sd14.pth` |
-| SARE-DINO | `dinov3-vith16plus` | `output/GenImage/1/SARE_DINO_SD14/weights/sare_dino_sd14.pth` |
+| SARE-CLIP | `clip-ViT-L-14` | `output/Genimage/1/SARE_CLIP_SD14/weights/sare_clip_sd14.pth` |
+| SARE-DINO | `dinov3-vith16plus` | `output/Genimage/1/SARE_DINO_SD14/weights/sare_dino_sd14.pth` |
 
 **Checkpoint release: upload pending.** The download command below will work after [v1.0.0](https://github.com/jh721/SARE/releases) is published.
 Once published, run from the repository root to download both SARE models and the DINOv3 backbone:
@@ -103,7 +103,7 @@ For SARE-CLIP (the default):
 ### SARE_CLIP ###
 MODEL_NAME=clip-ViT-L-14
 MODEL_SUBPATH=SARE_CLIP_SD14
-MODEL_PATH=../output/GenImage/1/${MODEL_SUBPATH}/weights/sare_clip_sd14.pth
+MODEL_PATH=../output/Genimage/1/${MODEL_SUBPATH}/weights/sare_clip_sd14.pth
 ```
 
 For SARE-DINO:
@@ -112,7 +112,7 @@ For SARE-DINO:
 ### SARE_DINO ###
 MODEL_NAME=dinov3-vith16plus
 MODEL_SUBPATH=SARE_DINO_SD14
-MODEL_PATH=../output/GenImage/1/${MODEL_SUBPATH}/weights/sare_dino_sd14.pth
+MODEL_PATH=../output/Genimage/1/${MODEL_SUBPATH}/weights/sare_dino_sd14.pth
 ```
 
 For SARE-DINO, also set `DINOV3_WEIGHTS` as described in Installation before running the script. Change the complete model block, including `MODEL_SUBPATH`, so that results are saved under the correct model directory.
@@ -129,7 +129,7 @@ The script already contains blocks for all four datasets:
 
 | `DATASET_NAME` | `ROOT_PATH` (relative to `scripts/`) | `FAKE_INDEXES` |
 | --- | --- | --- |
-| `GenImage` | `../dataset/Genimage/Genimage_recon/wo_prompt` | `(1 2 3 4 5 6 7 8)` |
+| `Genimage` | `../dataset/Genimage/Genimage_recon/wo_prompt` | `(1 2 3 4 5 6 7 8)` |
 | `CommunityForensics` | `../dataset/CommunityForensics/CommunityForensics_recon/wo_prompt` | `(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21)` |
 | `Forensynths` | `../dataset/Forensynths/Forensynths_recon/wo_prompt` | `(1 2 3 4 5 6 7 8 9 10 11 12)` |
 | `Chameleon` | `../dataset/Chameleon/Chameleon_recon/wo_prompt` | `(1)` |
@@ -150,9 +150,9 @@ The script uses Bash arrays, so run it with `bash`. Run it from `scripts/` so th
 Results are appended to the following path relative to the repository root:
 
 ```text
-output/GenImage/1/<MODEL_SUBPATH>/<DATASET_NAME>.txt
+output/Genimage/1/<MODEL_SUBPATH>/<DATASET_NAME>.txt
 ```
 
-For example, the default model and dataset save results to `output/GenImage/1/SARE_CLIP_SD14/Chameleon.txt`. Each evaluation records accuracy, AUC, recall, precision, F1, FNR, and EER. Labels are `0` for real and `1` for generated images; the default binary decision threshold is `0.5`. Both classes must be present to compute AUC. Results are aggregate metrics, not an exported list of per-image predictions. Repeated runs append to the same result file.
+For example, the default model and dataset save results to `output/Genimage/1/SARE_CLIP_SD14/Chameleon.txt`. Each evaluation records accuracy, AUC, recall, precision, F1, FNR, and EER. Labels are `0` for real and `1` for generated images; the default binary decision threshold is `0.5`. Both classes must be present to compute AUC. Results are aggregate metrics, not an exported list of per-image predictions. Repeated runs append to the same result file.
 
 If the loader reports zero images or image-read errors, check the extraction hierarchy, filename matching, and the presence of both `wo_prompt` and `w_prompt_blip` data before interpreting the metrics.

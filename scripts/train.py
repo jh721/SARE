@@ -295,7 +295,7 @@ if __name__ == '__main__':
             os.makedirs(os.path.dirname(args.save_txt), exist_ok=True)
             acc, auc, recall, precision, f1, fnr, eer = out_metrics
             with open(args.save_txt, 'a') as file:
-                if args.dataset_name == 'GenImage':
+                if args.dataset_name == 'Genimage':
                     class_name = GenImage_LIST[int(args.fake_indexes) - 1]
                 elif args.dataset_name == 'CommunityForensics':
                     class_name = CommunityForensics_LIST[int(args.fake_indexes) - 1]
