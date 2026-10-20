@@ -19,7 +19,7 @@ For SARE-DINO, download the DINOv3 ViT-H+/16 pretrained weights from the [offici
 dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a5.pth
 ```
 
-Set this environment variable **from the repository root**, before entering `scripts/`:
+Set this environment variable from the repository root, before entering `scripts/`:
 
 ```bash
 export DINOV3_WEIGHTS="$(pwd)/dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a5.pth"
