@@ -27,7 +27,7 @@ export DINOV3_WEIGHTS="$(pwd)/dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a
 
 ### 1. Download the SARE checkpoints
 
-Download the checkpoint for the model you want to evaluate and place it at the exact path below. These files are distributed separately from the source code.
+Download the checkpoint for the model you want to evaluate and place it at the exact path below.
 
 | Model | `--model_name` | Checkpoint path relative to the repository root |
 | --- | --- | --- |
@@ -77,7 +77,7 @@ dataset/
 
 ### 3. Run inference
 
-Configure `scripts/test.sh`, then run it from the `scripts/` directory. The script calls the evaluation entry point with `--is_test` and evaluates each selected generator in turn.
+Configure `scripts/test.sh`, then run it from the `scripts/` directory.
 
 **Select a model.** In `test.sh`, uncomment all three lines of the model block you want to use and comment out the other model block. Keep exactly one model block active.
 
@@ -128,15 +128,3 @@ Keep the full index array to evaluate every generator, or select a subset, such 
 cd scripts
 bash test.sh
 ```
-
-The script uses Bash arrays, so run it with `bash`. Run it from `scripts/` so that its relative paths resolve correctly.
-
-Results are appended to the following path relative to the repository root:
-
-```text
-output/Genimage/1/<MODEL_SUBPATH>/<DATASET_NAME>.txt
-```
-
-For example, the default model and dataset save results to `output/Genimage/1/SARE_CLIP_SD14/Chameleon.txt`. Each evaluation records accuracy, AUC, recall, precision, F1, FNR, and EER. Labels are `0` for real and `1` for generated images; the default binary decision threshold is `0.5`. Both classes must be present to compute AUC. Results are aggregate metrics, not an exported list of per-image predictions. Repeated runs append to the same result file.
-
-If the loader reports zero images or image-read errors, check the extraction hierarchy, filename matching, and the presence of both `wo_prompt` and `w_prompt_blip` data before interpreting the metrics.
