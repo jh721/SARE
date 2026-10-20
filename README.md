@@ -1,5 +1,7 @@
 # SARE
 
+Official repository of "SARE: Semantic-Aware Reconstruction Error for Generalizable AI-Generated Image Detection"
+
 ## Installation
 
 Download or clone this repository, then run the following commands from its root directory:
