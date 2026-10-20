@@ -13,13 +13,7 @@ python -m pip install torch==2.5.1 torchvision==0.20.1 --index-url https://downl
 python -m pip install -r requirements.txt
 ```
 
-Check that PyTorch can access the GPU:
-
-```bash
-python -c "import torch; print(torch.__version__); print('CUDA available:', torch.cuda.is_available())"
-```
-
-For SARE-DINO, the checkpoint download script in Inference also provides the DINOv3 ViT-H+/16 pretrained weights. Alternatively, obtain them from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3), following its access and license requirements. Place the file at:
+For SARE-DINO, once the checkpoint release is published, the download script in Inference will also provide the DINOv3 ViT-H+/16 pretrained weights. Alternatively, obtain them from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3), following its access and license requirements. Place the file at:
 
 ```text
 dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a5.pth
@@ -30,8 +24,6 @@ Set this environment variable **from the repository root**, before entering `scr
 ```bash
 export DINOV3_WEIGHTS="$(pwd)/dinov3/dinov3_vith16plus_pretrain_lvd1689m-7c1da9a5.pth"
 ```
-
-The current implementation initializes pretrained backbones before loading the SARE checkpoint. DINOv3 therefore needs the separate backbone weights above; CLIP and the ResNet branch may download pretrained weights on first use. DINOv3 also loads code through `torch.hub` from the official repository. Internet access is needed until these dependencies are cached.
 
 ## Inference
 
@@ -44,34 +36,11 @@ Download the checkpoint for the model you want to evaluate and place it at the e
 | SARE-CLIP | `clip-ViT-L-14` | `output/GenImage/1/SARE_CLIP_SD14/weights/sare_clip_sd14.pth` |
 | SARE-DINO | `dinov3-vith16plus` | `output/GenImage/1/SARE_DINO_SD14/weights/sare_dino_sd14.pth` |
 
-Checkpoints are available in [GitHub Releases (v1.0.0)](https://github.com/jh721/SARE/releases/tag/v1.0.0).
-From the repository root, download both SARE models and the DINOv3 backbone:
+**Checkpoint release: upload pending.** The download command below will work after [v1.0.0](https://github.com/jh721/SARE/releases) is published.
+Once published, run from the repository root to download both SARE models and the DINOv3 backbone:
 
 ```bash
 bash scripts/download_checkpoints.sh
-```
-
-The script downloads the release assets, verifies SHA-256 checksums, joins split
-files, and places all three checkpoints at the expected paths automatically.
-Files exceeding GitHub's per-asset limit are split without modifying their contents.
-Allow approximately 17 GiB of free disk space for downloaded parts and assembled weights.
-The DINOv3 backbone and SARE-DINO weights are subject to the
-[DINOv3 License](licenses/DINOv3-LICENSE.md); see [third-party notices](THIRD_PARTY_NOTICES.md).
-
-
-```text
-SARE/
-├── output/
-│   └── GenImage/
-│       └── 1/
-│           ├── SARE_CLIP_SD14/
-│           │   └── weights/sare_clip_sd14.pth
-│           └── SARE_DINO_SD14/
-│               └── weights/sare_dino_sd14.pth
-├── dataset/
-├── dinov3/
-├── scripts/
-└── requirements.txt
 ```
 
 ### 2. Download and place the evaluation data
