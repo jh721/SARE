@@ -79,9 +79,9 @@ dataset/
 
 Configure `scripts/test.sh`, then run it from the `scripts/` directory.
 
-**Select a model.** In `test.sh`, uncomment all three lines of the model block you want to use and comment out the other model block. Keep exactly one model block active.
+**Select a model.**
 
-For SARE-CLIP (the default):
+For SARE-CLIP:
 
 ```bash
 ### SARE_CLIP ###
@@ -99,9 +99,7 @@ MODEL_SUBPATH=SARE_DINO_SD14
 MODEL_PATH=../output/Genimage/1/${MODEL_SUBPATH}/weights/sare_dino_sd14.pth
 ```
 
-For SARE-DINO, also set `DINOV3_WEIGHTS` as described in Installation before running the script. Change the complete model block, including `MODEL_SUBPATH`, so that results are saved under the correct model directory.
-
-**Select a dataset.** Under `TEST_DATASET`, uncomment the `ROOT_PATH`, `DATASET_NAME`, and `FAKE_INDEXES` lines for the desired dataset and comment out the other dataset blocks. Keep exactly one dataset block active. Chameleon is selected by default:
+**Select a dataset.**
 
 ```bash
 ROOT_PATH=../dataset/Chameleon/Chameleon_recon/wo_prompt
@@ -118,11 +116,7 @@ The script already contains blocks for all four datasets:
 | `Forensynths` | `../dataset/Forensynths/Forensynths_recon/wo_prompt` | `(1 2 3 4 5 6 7 8 9 10 11 12)` |
 | `Chameleon` | `../dataset/Chameleon/Chameleon_recon/wo_prompt` | `(1)` |
 
-Keep the full index array to evaluate every generator, or select a subset, such as `FAKE_INDEXES=(1 2)`. The script runs each index separately.
-
-**Set the GPU and batch size.** Set `DEVICE_ID=0` in `test.sh` to use the first GPU (the current script defaults to `1`). Reduce `BATCH_SIZE` from its default of `24` if GPU memory is insufficient. Keep `EMBEDDING_SIZE=1024` and `INPUT_SIZE=224` for the released checkpoints.
-
-**Run the script.** From the repository root, with the `sare` environment activated:
+**Run the script.**
 
 ```bash
 cd scripts
