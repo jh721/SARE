@@ -126,3 +126,5 @@ bash test.sh
 ## Acknowledgments
 
 Our code is developed based on [DRCT](https://github.com/beibuwandeluori/DRCT), [CLIP](https://github.com/openai/CLIP), and [DINOv3](https://github.com/facebookresearch/dinov3). We thank the authors for sharing their code and models.
+
+The SARE-DINO checkpoint is subject to the [DINOv3 License](licenses/DINOv3-LICENSE.md), rather than the repository's MIT license.
