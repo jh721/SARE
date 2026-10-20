@@ -56,8 +56,6 @@ bash scripts/download_dataset.sh CommunityForensics
 bash scripts/download_dataset.sh Forensynths
 ```
 
-The script automatically uses the SARE directory containing the script, downloads and verifies all required archive parts, and extracts the data into `dataset/`. To run it from another directory, provide the path to the script, for example `bash /path/to/SARE/scripts/download_dataset.sh Chameleon`.
-
 ```text
 dataset/
 ├── Genimage/
