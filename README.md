@@ -36,7 +36,7 @@ Download the checkpoint for the model you want to evaluate and place it at the e
 | SARE-CLIP | `clip-ViT-L-14` | `output/Genimage/1/SARE_CLIP_SD14/weights/sare_clip_sd14.pth` |
 | SARE-DINO | `dinov3-vith16plus` | `output/Genimage/1/SARE_DINO_SD14/weights/sare_dino_sd14.pth` |
 
-Download both SARE models and the DINOv3 backbone from [GitHub Releases (v1.0.0)](https://github.com/jh721/SARE/releases/tag/v1.0.0) by running the following command from the repository root:
+Download both SARE models from [GitHub Releases (v1.0.0)](https://github.com/jh721/SARE/releases/tag/v1.0.0) by running the following command from the repository root:
 
 ```bash
 bash scripts/download_checkpoints.sh
