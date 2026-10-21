@@ -46,7 +46,6 @@ bash scripts/download_checkpoints.sh
 
 Download the prepared evaluation data from [SARE-DB/SARE-evaluation on Hugging Face](https://huggingface.co/datasets/SARE-DB/SARE-evaluation).
 
-**The data release is being uploaded progressively.** Before downloading a dataset, check that its name appears in `completed_datasets` in the repository's `manifest.json`. A partially uploaded dataset is not ready for evaluation. The manifest and `SHA256SUMS` are updated after each dataset is fully uploaded and verified.
 
 Run the download script with a dataset name:
 
